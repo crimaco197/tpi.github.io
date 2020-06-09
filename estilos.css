@@ -1,0 +1,130 @@
+.fondo {
+    /* Aqui solo se le asigna un color al fondo (gris claro) */ 
+	background-color:#999999;
+}
+
+h1{
+    /* En la fuente se especifica que sea una Arial y en caso de que no esté disponible aparecera una sin serifa */ 
+    font-family: Arial, sans-serif;
+    /* El color del titulo sera negro */ 
+	color:#000000;
+    /* Aca se especifica que el tamaño de la fuente sea de 100 pixeles */ 
+	font-size: 100px;
+    /* El peso de la letra sera normal */ 
+	font-weight: normal
+    /* El texto del titulo irá alineado al centro */ ;
+	text-align: center;
+    /* Aqui se especifica que el ancho de la caja que contiene el titulo sera de maximo 100px  */ 
+	max-width: 800px;
+    /* Se asignara el margen en auto, lo cual hace que el titulo quede centrado en la pagina */ 
+	margin:auto;
+    /* Aqui se especifica que halla una distancia de de 10px entre esta caja y el elemento de abajo  */ 
+	margin-bottom:10px;
+    /* Aqui se especifica que entre el titulo y el borde superior de la caja hallan 100px y con el borde inferior 10px, se deja el padding de la izquierda y derecha en 0 ya que esa distancia ya esta especificada en el ancho de la caja, y el texto queda centrado en ese ancho */ 
+    padding: 50px 0px 10px 0px;
+    /* Aqui se asigna una imagen que ira como fondo en la caja que contiene el titulo*/ 
+    background-image: url(Imagenes/portada.jpg);
+    /* Aqui se asigna que la imagen de fondo quede en el centro de la caja */ 
+    background-position: center;
+    /* Aqui se especifica que el tamaño de la imagen de fondo sera de 800px */ 
+    background-size: 800px;  
+    background-repeat: no-repeat;
+}
+    /* Este el estilo que se le aplica a la imagen que va como titulo principal */ 
+.logo{
+    /* El ancho maximo del logo que va en el tiutlo sera de 400px */ 
+    max-width: 400px;
+}
+
+h2{
+    /* Tanto en el titulo h2 como en todos los textos de las paginas se utilizaran las mismas fuentes */ 
+    font-family: Arial, sans-serif;
+    /* El tamaño de estos titulos es de 30px ya que tiene menos jerarquia que el h1 */ 
+    font-size: 30px;
+    /* El ancho maximo de esta caja sera de 800px */ 
+    max-width: 800px;
+    /* la caja del titulo ira centrada en la pagina  */ 
+    margin: auto;
+    /* La distancia entre esta caja y el elemento de arriba sera de 10px */ 
+    margin-top: 10px;
+}
+h3{
+    font-family: Arial, sans-serif;
+    /* Siguiendo jerarquias este titulo sera mas pequeño que los titulos h2 */ 
+    font-size: 22px;
+    /* El ancho maximo de esta caja sera de 800px */ 
+    max-width: 800px;
+    /* la caja del titulo ira centrada en la pagina  */
+    margin: auto;
+}
+a{ /* Para los links se le quitara la decoracion por defecto que trae la etiqueta a y se le asignara un color negro  */
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    /* Cuando se le pase el mouse encima a los link estos seran de color blanco  */
+    color: #FFFFFF;
+}
+.texto {/* Este es el estilo que se le aplicara a todos los texto de parrafo normales */ 
+	/* el ancho maximo de la caja del texto sera de 800px */ 
+	max-width:800px;
+    /* la caja ira ubicada en el centro de la pagina*/ 
+	margin:auto;
+    /* Se usara la fuente de siempre, con un tamaño de 16px para su correcta lectura, con un peso normal, color negro */ 
+	font-family: Arial, Helvetica, sans-serif;
+	color:#000000;
+    font-size: 16px;
+	font-weight: normal;
+    /* El texto ira justificado dentro de la caja */ 
+	text-align: justify;	    
+}
+.mapaPhaser {/* Este es el estilo que se le aplicara al mapa de phaser */
+        /* El mapa irá centrado en la pagina */
+	     margin: auto;
+        /* Su tamaño es relativo pero medira maximo 800px */
+         max-width:800px;
+		 } 
+.final { /* Este es el estilo para la barra que hay al final de todas las paginas */
+     /* El tamaño de la letra sera mas pequeño de lo comun, lo cual es comun en las paginas web */
+    font-family: Arial, sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-weight: normal;
+    color:#000000;
+	text-align:center;
+     /* La barra ocupara de ancho maximo los 800px */
+    max-width: 800px;
+	background-color:#666666;
+	padding: 15px 0px 15px 0px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width: 780px){ /* Aqui se especifican los cambios que habran cuando la pantalla sea de menos de 780px */
+     /* El logo del titulo se hara mas pequeño para que quepa mejor en la ventana */
+    .logo{
+    width: 380px;
+    }
+    .texto {
+	font-size: 18px;
+    }
+    .final{
+    font-size: 15px;
+    }  
+}
+
+@media only screen and (max-width: 480px){
+    /* El logo se hace aun pas pequeño*/
+    .logo{
+    width: 310px;
+    }        
+    /* Las fuentes aunmentan aun mas su tamaño para su mejor lectura en pantallas aun mas pequeñas*/
+    .texto {
+	font-size: 20px;
+    }
+    .final{
+    font-size: 17px;
+    }    
+}
+
